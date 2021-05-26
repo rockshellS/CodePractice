@@ -19,7 +19,10 @@ function tuckIn(arr1, arr2) {
     return [arr1[0], ...arr2, arr1[1]]
   }
 
-
+function tuckIn(arr1, arr2) {
+	let l = arr1.length / 2
+	return [arr1[l], ...arr2]
+}
 
 //Create a method in the Person class which returns how another person's age compares. 
 //Given the instances p1, p2 and p3, which will be initialised with the attributes name and age, 
