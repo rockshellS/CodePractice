@@ -11,23 +11,21 @@
 //     // Write your code here
  
 // }
-const arr = [1,1,13,4,4,5,5,5,5,6]
 
-function mostPaired(arr){
-	let nums = {}
-    const pairs = []
-	for(let x = 0; x < arr.length; x++) {
-		let elem = arr[x]
-		if (nums[elem]) {
-			// elem already in nums
-			nums[elem] += 1
-		} else {
-			// elem not in nums
-			nums[elem] = 1
-		}
-	}
-    return mostPaired()
+
+const arr = [1,4,4,4,4,1,1,3,2,2,6,6,6,6,7]
+const n = 15
+const sortAndCount = (n, arr) => {
+    let pairs = 0;
+    let numsSorted = arr.sort( (a,b) => a-b);
+    for (let i = 0; i < n - 1; i++ ) {
+        if (numsSorted[i] === numsSorted[i + 1]) {
+            pairs++;
+            i += 1;
+        }
+        
+        }
+    return pairs
 }
-console.log(mostPaired(arr))
 
-//should we use .filter on the array?
+console.log(`Total: ${sortAndCount(n , arr)} pairs`)
