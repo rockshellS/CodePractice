@@ -29,3 +29,5 @@ function mostPaired(arr){
     return mostPaired()
 }
 console.log(mostPaired(arr))
+
+//should we use .filter on the array?
