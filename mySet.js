@@ -16,3 +16,11 @@ console.log(uniqueArray)  // [1,2,3,4,5,6]
 mySet.add(10)
 
 console.log(mySet) // {1,2,3,4,5,6,10}
+
+mySet.delete(5)
+
+console.log(mySet) // { 1, 2, 3, 4, 6, 10 }
+
+mySet.clear();
+
+console.log(mySet) // {}
