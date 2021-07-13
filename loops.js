@@ -56,10 +56,108 @@
 
 // forIn loop
 
-const user = { 'firstName': 'Rachelle', 'lastName': 'Spicer'}
-for (key in user) console.log(user[key])
+// const user = { 'firstName': 'Rachelle', 'lastName': 'Spicer'}
+// for (key in user) console.log(user[key])
 
 // Rachelle
 // Spicer
 
 // it's looping through each key firstName and lastName and logging the value of each
+
+
+// function fizzBuzz(n){
+
+// for ( let i = 1; i < n; i++) {
+//     if (i % 15 === 0){
+//         console.log("FizzBuzz")
+//     }
+//     else if ((i % 3) === 0) {
+//         console.log("Fizz")
+//     }
+//     else if ((i % 5) === 0 ){
+//         console.log("Buzz")
+//     }
+//     else {
+//         console.log(i)
+//     }
+// }
+
+// }
+// console.log(fizzBuzz(15))
+
+
+// str = ['code', 'doce', 'ecod', 'framer', 'frame']
+
+// function funWithAnagrams(str) {
+//    for (let i = 0; i < str.length; i++){
+//        for (let j = str.length - 1; j > i; j--){
+//            let sortedA = str[i].split('').sort().join("")
+//            console.log(sortedA)
+//            let sortedB = str[j].split('').sort().join("")
+//         //    console.log(sortedB)
+//            if (sortedA === sortedB){
+//                str.splice(j,1)
+//            }
+//        }
+//    }
+//    return str.sort()
+// }
+// console.log(funWithAnagrams(str))
+
+
+
+
+
+
+
+// function funWithAnagrams(str){
+//     str.sort()
+// }
+// console.log(funWithAnagrams(str))
+
+// function getAllSubstrings(str) {
+//     let i, j, result = [];
+//     for (i = 0; i < str.length; i++){
+//         for (j = i + 1; j < str.length + 1; j++) {
+//             // result.push(str.slice(i,j))
+//             if ()
+//         }
+//     }
+//     return result
+// }
+
+// console.log(getAllSubstrings(str))
+
+
+
+
+
+
+
+
+
+
+// function funWithAnagrams(str) {
+//     for (item of str){
+       
+//     }
+    
+
+// }
+// console.log(funWithAnagrams(str))
+
+
+let text = ["Buzz", "WOW", "MOM", "zzuB"]
+ function funWithAlgros(text) {
+    let newArr = []
+    let newArr2 = []
+     for ( let words of text) {
+         let orderedText = words.split('').sort().join("")
+         newArr.push(orderedText)
+        //  console.log(newArr)
+        let unique = [...new Set(newArr)]
+        console.log(unique)
+     }
+    //  return newArr.sort()
+ }
+   console.log(funWithAlgros(text))

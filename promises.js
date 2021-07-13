@@ -32,4 +32,4 @@ let promise = new Promise( (resolve, reject) => {
 	}, 500)
 })
 
-console.log(promise)
+console.log()
