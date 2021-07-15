@@ -24,8 +24,8 @@ function revStr2(str) {
 
     while(left <= right) {
         arr[left] = charsArr[right] // the very first item in new array is now going to be equal to the very last item in old array
-        arr[right] = charsArr[left] // the very last item in new arry is now going to be equal to the very forst item in old array
-        left ++ // then we can increment the lft by 1
+        arr[right] = charsArr[left] // the very last item in new array is now going to be equal to the very first item in old array
+        left ++ // then we can increment the left by 1
         right -- // and decrement the right by 1 
 }
 

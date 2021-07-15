@@ -92,9 +92,9 @@
 //    for (let i = 0; i < str.length; i++){
 //        for (let j = str.length - 1; j > i; j--){
 //            let sortedA = str[i].split('').sort().join("")
-//            console.log(sortedA)
+//         //    console.log(sortedA)
 //            let sortedB = str[j].split('').sort().join("")
-//         //    console.log(sortedB)
+//            console.log(sortedB)
 //            if (sortedA === sortedB){
 //                str.splice(j,1)
 //            }
@@ -109,24 +109,25 @@
 
 
 
+// text = ['code', 'doce', 'ecod', 'framer', 'frame']
 
-// function funWithAnagrams(str){
-//     str.sort()
+// function funWithAnagrams(text){
+//     text.sort()
 // }
-// console.log(funWithAnagrams(str))
+// // console.log(funWithAnagrams(str))
 
 // function getAllSubstrings(str) {
 //     let i, j, result = [];
 //     for (i = 0; i < str.length; i++){
 //         for (j = i + 1; j < str.length + 1; j++) {
-//             // result.push(str.slice(i,j))
-//             if ()
+//             result.push(text.slice(i,j))
+           
 //         }
 //     }
 //     return result
 // }
 
-// console.log(getAllSubstrings(str))
+// console.log(getAllSubstrings(text))
 
 
 
@@ -147,17 +148,111 @@
 // console.log(funWithAnagrams(str))
 
 
-let text = ["Buzz", "WOW", "MOM", "zzuB"]
- function funWithAlgros(text) {
-    let newArr = []
-    let newArr2 = []
-     for ( let words of text) {
-         let orderedText = words.split('').sort().join("")
-         newArr.push(orderedText)
-        //  console.log(newArr)
-        let unique = [...new Set(newArr)]
-        console.log(unique)
-     }
-    //  return newArr.sort()
- }
-   console.log(funWithAlgros(text))
+
+
+
+
+// let text = ['code', 'doce', 'ecod', 'framer', 'frame']
+//  function funWithAlgros(text) {
+//     let newArr = []
+//     let newArr2 = []
+//     let newObj = {}
+//      for ( let i = 0; i < text.length; i++ ) {
+//          let orderedText = text[i].split('').sort().join("")
+        
+//          newArr.push(orderedText)  
+//         //  console.log(newArr)
+//         let unique = [...new Set(newArr)]
+//         // console.log(unique)
+//        for ( let x = 0; x < unique.length; x++ ) {
+//            if (orderedText === unique[x]) {
+//             //   console.log(i) 
+//               newObj[text[i]] = true
+
+//            }
+//         //    console.log(orderedText)
+//             //   console.log(unique)
+//             // if( word === orderedText)
+           
+
+//            }
+        
+//        }
+//        console.log(Object.keys(newObj))
+//         Object.keys(newObj)    
+//     //  return text.sort()
+//  }
+//    console.log(funWithAlgros(text))
+
+
+let text = ['code', 'doce', 'ecod', 'framer', 'frame']
+function funWithAlgros(text) {
+   for (let i = 0; i < text.length; i++){
+      for (let j = text.length - 1; j > i; j--) {
+         let a = text[i].split('').sort().join("");
+         let b = text[j].split('').sort().join("")
+         if (a === b) {
+            text.splice(j, 1)
+         }
+         //console.log(a, b);
+      }
+   }
+   return text.sort();
+}
+
+console.log(funWithAlgros(text))
+
+   
+   // function funWithAlgros(text) {
+   //    let newArr = []
+   //    let newArr2 = []
+   //     for ( let words of text) {
+   //         //let orderedText = words.split('').sort().join("")
+   //        //  let orderWords = words.split('')
+   //      //    console.log(orderWords)
+   //        let idx = text.indexOf(words)
+   //        if ()
+   //      console.log(idx)
+
+   //         newArr.push(orderedText)  
+   //      //    console.log(newArr)
+   //        let unique = [...new Set(newArr)]
+   //        console.log(unique);
+   //       // for ( let word of unique) {
+   //          //  console.log(unique)
+   //       // }
+   //     }
+   //    //  return newArr.sort()
+   // }
+//console.log(funWithAlgros(text))
+     
+
+// function newTry(text) {
+   
+//    let left = 0; // index 0
+//    let right = text.length - 1; // points to the last index
+
+//    while (left < right) {
+//       let a = text[left].split('').sort().join("");
+//       let b = text[right].split('').sort().join("")
+      
+//       if (a === b) {
+//           console.log("true");
+//          text.splice(right,1);// the right index the loop is on
+//          right--
+//       } else {
+//         right--
+        
+//       }
+      
+// }
+// return text.sort()
+   
+// }
+// let text = ['code', 'farm', 'ecod', 'framer', "poke", "ekop"]
+// console.log(newTry(text))
+
+
+// let nums = [1, 0, 0, 1, 0] // 1 + 2 = 3
+
+// // how many swaps rew needed to group 1's
